@@ -478,6 +478,82 @@ footer{padding:70px 0 30px; border-top:1px solid var(--line);}
   .invest-grid{grid-template-columns:1fr;}
   .invest-video iframe{max-width:100%;}
 }
+.investment-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 40px auto;
+}
+
+.investment-video {
+  width: 50%;
+  text-align: center;
+}
+
+.investment-video iframe {
+  width: 100%;
+  max-width: 480px;
+  height: 360px;
+  border: 1px solid #333;
+}
+
+.investment-info {
+  width: 50%;
+  padding: 20px;
+}
+
+.investment-info h2 {
+  font-size: 28px;
+  font-weight: normal;
+  margin-bottom: 25px;
+}
+
+.investment-info p {
+  margin: 18px 0;
+  line-height: 1.6;
+}
+
+.investment-info button {
+  margin-top: 20px;
+  padding: 16px 35px;
+  border: none;
+  background: #b8943f;
+  color: #000;
+  font-size: 13px;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.invest-video-note {
+  font-size: 11px;
+  letter-spacing: 1px;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+
+  .investment-section {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .investment-video,
+  .investment-info {
+    width: 100%;
+  }
+
+  .investment-video iframe {
+    height: 280px;
+  }
+
+  .investment-info {
+    padding: 10px;
+  }
+
+}
 
 /* ===== BLOG LINK (Noticias) ===== */
 .news-blog-link{margin-top:40px; padding-top:32px; border-top:1px solid var(--line); display:flex; align-items:center; justify-content:space-between; gap:24px; flex-wrap:wrap;}
